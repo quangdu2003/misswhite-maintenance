@@ -1,16 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mỹ phẩm MissWhite đang bảo trì</title>
+
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin:0;
-  background:url('banner.jpg') no-repeat center center;
-  background-size:cover;
-  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+}
+
+/* Container giữ ảnh */
+.banner-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ảnh desktop */
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* giữ full màn hình */
+}
+
+/* 📱 Mobile tối ưu */
+@media (max-width: 768px) {
+  .banner-img {
+    object-fit: contain; /* không bị cắt chữ */
+    width: 100%;
+    height: auto;
+  }
+
+  body {
+    background: #fff;
+  }
 }
 </style>
 </head>
-<body></body>
+
+<body>
+
+<div class="banner-container">
+  <img src="banner.jpg" alt="Banner bảo trì" class="banner-img">
+</div>
+
+</body>
 </html>
