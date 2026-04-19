@@ -20,7 +20,7 @@ body {
   background: #fff;
 }
 
-/* Container giữ ảnh */
+/* Khung chứa banner */
 .banner-container {
   width: 100%;
   height: 100%;
@@ -30,23 +30,19 @@ body {
   align-items: center;
 }
 
-/* Ảnh desktop */
+/* Ảnh banner */
 .banner-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* giữ full màn hình */
+  object-fit: cover;
 }
 
-/* 📱 Mobile tối ưu */
+/* Mobile */
 @media (max-width: 768px) {
   .banner-img {
-    object-fit: contain; /* không bị cắt chữ */
+    object-fit: contain;
     width: 100%;
     height: auto;
-  }
-
-  body {
-    background: #fff;
   }
 }
 </style>
@@ -55,7 +51,7 @@ body {
 <body>
 
 <div class="banner-container">
-  <img src="banner.jpg" alt="Banner bảo trì" class="banner-img">
+  <img src="banner.jpg" alt="Banner bảo trì website" class="banner-img">
 </div>
 
 </body>
